@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  isolation: isolate;
+  @apply bg-brand-dark font-body text-brand-text antialiased;
+  background-image:
+    radial-gradient(circle at top, rgba(123, 63, 228, 0.22), transparent 28%),
+    radial-gradient(circle at 18% 24%, rgba(163, 255, 18, 0.08), transparent 22%),
+    linear-gradient(180deg, #090b12 0%, #0b0f18 38%, #090b12 100%);
+  background-position: center top, center top, center top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(180deg, rgba(7, 10, 18, 0.18) 0%, rgba(7, 10, 18, 0.42) 100%),
+    url("/site-atmosphere-generated.png");
+  background-position: center top, center top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  opacity: 0.88;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(123, 63, 228, 0.26), transparent 24%),
+    radial-gradient(circle at 82% 72%, rgba(163, 255, 18, 0.12), transparent 22%);
+}
+
+::selection {
+  background: rgba(163, 255, 18, 0.35);
+  color: #ffffff;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading tracking-[-0.03em] text-balance;
+  }
+
+  p {
+    @apply text-brand-muted;
+  }
+
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-green focus-visible:ring-offset-2 focus-visible:ring-offset-brand-dark;
+  }
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-space {
+    @apply py-16 md:py-20 lg:py-24 xl:py-28;
+  }
+
+  .surface-card {
+    @apply rounded-[24px] border border-white/10 bg-brand-elevated/85 shadow-soft backdrop-blur-sm;
+  }
+
+  .grid-overlay {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-brand-green via-white to-brand-green bg-clip-text text-transparent;
+  }
+
+  .admin-panel {
+    @apply rounded-[24px] border border-slate-200 bg-white shadow-[0_18px_45px_rgba(15,23,42,0.08)];
+  }
+
+  .admin-soft-panel {
+    @apply rounded-[20px] border border-slate-200/80 bg-slate-50;
+  }
+
+  .admin-input {
+    @apply w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400;
+  }
+
+  .admin-select {
+    @apply w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900;
+  }
+
+  .admin-textarea {
+    @apply w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400;
+  }
+
+  .admin-button-primary {
+    @apply inline-flex items-center justify-center rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-70;
+  }
+
+  .admin-button-secondary {
+    @apply inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50;
+  }
+
+  .admin-kicker {
+    @apply text-[11px] font-semibold uppercase tracking-[0.24em] text-sky-600;
+  }
+}
+
+.testimonial-scroll:hover .testimonial-card {
+  opacity: 0.72;
+}
+
+.testimonial-scroll:hover .testimonial-card:hover {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "branding": {
+    "name": "Yandrixa Smart Solutions",
+    "brand": "Yandrixa",
+    "subBrand": "Smart Solutions",
+    "tagline": "Build. Grow. Scale.",
+    "domain": "yandrixa.in"
+  },
+  "seo": {
+    "siteUrl": "https://yandrixa.in",
+    "defaultTitle": "Yandrixa Smart Solutions | Web Development, Software, AI and Digital Growth",
+    "titleTemplate": "%s | Yandrixa Smart Solutions",
+    "siteDescription": "Yandrixa Smart Solutions provides website development, custom web applications, APIs, e-commerce, AI automation, business dashboards, digital marketing, and lead-generation support."
+  },
+  "contact": {
+    "email": "{{BUSINESS_EMAIL}}",
+    "phone": "{{PHONE_NUMBER}}",
+    "whatsapp": "{{WHATSAPP_NUMBER}}",
+    "location": "{{BUSINESS_LOCATION}}"
+  },
+  "social": {
+    "linkedin": "{{LINKEDIN_URL}}",
+    "instagram": "{{INSTAGRAM_URL}}",
+    "facebook": "",
+    "twitter": ""
+  },
+  "links": {
+    "consultationUrl": ""
+  },
+  "analytics": {
+    "id": "",
+    "enabled": false,
+    "requiresConsent": false
+  },
+  "content": {
+    "footerDescription": "Yandrixa Smart Solutions builds practical websites, software, automation systems, and digital growth foundations for modern businesses.",
+    "trustPoints": [
+      "Clear project communication",
+      "Custom business solutions",
+      "Scalable technology",
+      "Long-term technical support"
+    ]
+  },
+  "partnerProgram": {
+    "headline": "Independent Marketing Partner Program",
+    "disclosure": "Commission-based independent opportunity. This is not a fixed-salary employment position.",
+    "commissionPercentage": ""
+  }
+}
