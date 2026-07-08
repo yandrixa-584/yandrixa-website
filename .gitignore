@@ -12,3 +12,6 @@ npm-debug.log*
 /storage/*.key
 .idea
 .DS_Store
+public/hot
+.DS_Store
+.idea
