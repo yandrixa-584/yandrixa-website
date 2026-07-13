@@ -1,0 +1,24 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="40" fill="#0A1022"/>
+  <rect x="36" y="36" width="1128" height="688" rx="30" fill="#111827" stroke="#2E3C52" stroke-width="2"/>
+  <rect x="72" y="72" width="1056" height="96" rx="24" fill="#121D31"/>
+  <text x="110" y="130" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="42" font-weight="700">AI &amp; Automation Control Center</text>
+  <rect x="72" y="204" width="520" height="448" rx="28" fill="#141D31"/>
+  <text x="110" y="252" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="28" font-weight="700">Workflow Map</text>
+  <circle cx="190" cy="360" r="28" fill="#A3E635"/>
+  <circle cx="336" cy="360" r="28" fill="#38BDF8"/>
+  <circle cx="482" cy="360" r="28" fill="#818CF8"/>
+  <path d="M218 360H308" stroke="#94A3B8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M364 360H454" stroke="#94A3B8" stroke-width="10" stroke-linecap="round"/>
+  <rect x="110" y="440" width="444" height="16" rx="8" fill="#334155"/>
+  <rect x="110" y="476" width="392" height="16" rx="8" fill="#334155"/>
+  <rect x="110" y="512" width="352" height="16" rx="8" fill="#334155"/>
+  <rect x="628" y="204" width="500" height="212" rx="28" fill="#141D31"/>
+  <text x="666" y="252" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="28" font-weight="700">Lead Response</text>
+  <path d="M700 364C746 332 784 314 826 322C858 328 902 374 948 350C976 336 1014 286 1062 262" stroke="#A3E635" stroke-width="10" stroke-linecap="round"/>
+  <rect x="628" y="440" width="500" height="212" rx="28" fill="#141D31"/>
+  <text x="666" y="488" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="28" font-weight="700">Conversation Queue</text>
+  <rect x="666" y="532" width="424" height="18" rx="9" fill="#334155"/>
+  <rect x="666" y="568" width="386" height="18" rx="9" fill="#334155"/>
+  <rect x="666" y="604" width="344" height="18" rx="9" fill="#334155"/>
+</svg>

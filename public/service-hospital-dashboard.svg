@@ -1,0 +1,23 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="40" fill="#08111F"/>
+  <rect x="36" y="36" width="1128" height="688" rx="30" fill="#0F172A" stroke="#27415A" stroke-width="2"/>
+  <rect x="72" y="72" width="1056" height="84" rx="24" fill="#111F30"/>
+  <text x="110" y="126" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="42" font-weight="700">Hospital Operations Dashboard</text>
+  <rect x="72" y="188" width="328" height="210" rx="26" fill="#112437"/>
+  <text x="102" y="236" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="28" font-weight="700">Appointments</text>
+  <text x="102" y="320" fill="#A3E635" font-family="Arial, sans-serif" font-size="72" font-weight="700">128</text>
+  <text x="102" y="360" fill="#94A3B8" font-family="Arial, sans-serif" font-size="22">Booked for today</text>
+  <rect x="436" y="188" width="328" height="210" rx="26" fill="#112437"/>
+  <text x="466" y="236" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="28" font-weight="700">Bed Utilization</text>
+  <circle cx="600" cy="308" r="66" stroke="#1E293B" stroke-width="22"/>
+  <path d="M600 242 A66 66 0 1 1 536 322" stroke="#38BDF8" stroke-width="22" stroke-linecap="round"/>
+  <text x="564" y="320" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="34" font-weight="700">81%</text>
+  <rect x="800" y="188" width="328" height="210" rx="26" fill="#112437"/>
+  <text x="830" y="236" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="28" font-weight="700">Revenue</text>
+  <path d="M848 346C884 326 906 302 942 296C980 290 998 324 1038 314C1068 306 1088 282 1102 262" stroke="#A3E635" stroke-width="10" stroke-linecap="round"/>
+  <rect x="72" y="430" width="1056" height="222" rx="26" fill="#112437"/>
+  <text x="110" y="478" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="28" font-weight="700">Care Queue</text>
+  <rect x="110" y="520" width="980" height="18" rx="9" fill="#334155"/>
+  <rect x="110" y="560" width="924" height="18" rx="9" fill="#334155"/>
+  <rect x="110" y="600" width="874" height="18" rx="9" fill="#334155"/>
+</svg>

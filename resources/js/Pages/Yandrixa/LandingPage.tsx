@@ -33,12 +33,12 @@ export default function LandingPageView({ site, landingPage }: { site: SiteProps
                 </div>
                 <div className="mt-10 grid gap-4 md:grid-cols-3">
                     {landingPage.heroPoints.map((point) => (
-                        <div key={point} className="rounded-[28px] border border-white/10 bg-white/5 p-5 text-sm text-slate-100">
+                        <div key={point} className="rounded-[28px] border border-white/10 bg-[var(--panel-soft)] p-5 text-sm text-slate-100 backdrop-blur">
                             {point}
                         </div>
                     ))}
                 </div>
-                <div className="mt-14 rounded-[32px] border border-white/10 bg-slate-950/60 p-8">
+                <div className="mt-14 rounded-[32px] border border-white/10 bg-[var(--panel-strong)] p-8 shadow-[0_18px_45px_rgba(15,23,42,0.18)]">
                     <h3 className="text-3xl font-semibold text-white">{landingPage.bodyTitle}</h3>
                     <p className="mt-4 max-w-4xl text-base leading-8 text-slate-300">{landingPage.bodyContent}</p>
                 </div>

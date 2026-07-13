@@ -29,7 +29,7 @@ export default function Section({
                         <p className="mt-4 text-base leading-8 text-slate-300">{section.description}</p>
                         <div className="mt-8 space-y-3">
                             {section.points.map((point) => (
-                                <div key={point} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-100">
+                                <div key={point} className="rounded-2xl border border-white/10 bg-[var(--panel-soft)] px-4 py-3 text-sm text-slate-100 backdrop-blur">
                                     {point}
                                 </div>
                             ))}
@@ -40,7 +40,7 @@ export default function Section({
                         {slug === 'contact' ? <ContactForm /> : null}
                         {slug === 'partners' ? <PartnerForm headline={site.partnerProgram.headline} disclosure={site.partnerProgram.disclosure} /> : null}
                         {!['contact', 'partners'].includes(slug) ? (
-                            <div className="rounded-[32px] border border-white/10 bg-white/5 p-7 backdrop-blur">
+                            <div className="rounded-[32px] border border-white/10 bg-[var(--panel-soft)] p-7 backdrop-blur">
                                 <h3 className="text-2xl font-semibold text-white">Need a tailored solution?</h3>
                                 <p className="mt-3 text-sm leading-7 text-slate-300">
                                     Yandrixa can shape websites, software, integrations, automation, and marketing support around your exact business requirements.
@@ -82,7 +82,7 @@ function ContactForm() {
                 event.preventDefault();
                 form.post('/contact');
             }}
-            className="rounded-[32px] border border-white/10 bg-white/5 p-7 backdrop-blur"
+            className="rounded-[32px] border border-white/10 bg-[var(--panel-soft)] p-7 backdrop-blur"
         >
             <h3 className="text-2xl font-semibold text-white">Project enquiry form</h3>
             <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -143,7 +143,7 @@ function PartnerForm({ headline, disclosure }: { headline: string; disclosure: s
                 event.preventDefault();
                 form.post('/partners');
             }}
-            className="rounded-[32px] border border-white/10 bg-white/5 p-7 backdrop-blur"
+            className="rounded-[32px] border border-white/10 bg-[var(--panel-soft)] p-7 backdrop-blur"
         >
             <h3 className="text-2xl font-semibold text-white">{headline}</h3>
             <p className="mt-3 text-sm leading-7 text-slate-300">{disclosure}</p>
@@ -199,7 +199,7 @@ function TextField({
                 type={type}
                 value={value}
                 onChange={(event) => onChange(event.target.value)}
-                className="w-full rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-sm text-white outline-none transition focus:border-lime-400"
+                className="w-full rounded-2xl border border-white/10 bg-[var(--card-inset)] px-4 py-3 text-sm text-white outline-none transition focus:border-lime-400"
             />
         </label>
     );
@@ -221,7 +221,7 @@ function TextAreaField({
                 value={value}
                 onChange={(event) => onChange(event.target.value)}
                 rows={5}
-                className="w-full rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-sm text-white outline-none transition focus:border-lime-400"
+                className="w-full rounded-2xl border border-white/10 bg-[var(--card-inset)] px-4 py-3 text-sm text-white outline-none transition focus:border-lime-400"
             />
         </label>
     );
